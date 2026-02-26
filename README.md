@@ -53,7 +53,7 @@ make add-userbot AGENT=alice            # Подключить юзербот к
 make restart AGENT=alice [PORT=18789]     # Перезапустить с юзерботом
 ```
 
-`add-userbot` копирует в workspace агента сниппеты из `infra/telegram-mcp/` — инструкции для работы с Telegram. По умолчанию юзербот работает только с группами. Перед подключением отредактируйте сниппеты под себя:
+`add-userbot` копирует в workspace агента сниппеты из `infra/telegram-mcp/` — инструкции для работы с Telegram. По умолчанию юзербот работает только с группами. Если вы хотите другого поведения, отредактируйте сниппеты под себя:
 
 - `infra/telegram-mcp/tools-snippet.md` — дописывается в TOOLS.md агента
 - `infra/telegram-mcp/heartbeat-snippet.md` — дописывается в HEARTBEAT.md агента (поведение при периодическом сканировании чатов)

@@ -32,7 +32,7 @@ make create
 ### 2. Запустить
 
 ```bash
-make start AGENT=alice PORT=18789
+make start AGENT=alice [PORT=18789]  # если не указать порт, будет использован 18789
 ```
 
 Агент запущен. Пишите ему в Telegram-бот или откройте `http://localhost:18789`.

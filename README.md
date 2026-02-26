@@ -9,7 +9,7 @@ Docker-инфраструктура для запуска [OpenClaw](https://ope
 ## Требования
 
 - Docker
-- API-ключ Anthropic
+- API-ключ провайдера LLM
 - Токен Telegram-бота ([BotFather](https://t.me/BotFather))
 
 Для юзербота (опционально):

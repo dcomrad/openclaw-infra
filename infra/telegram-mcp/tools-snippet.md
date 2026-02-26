@@ -1,5 +1,5 @@
 ## Telegram Userbot
-Telegram userbot works via mcporter. Groups only — never read or respond to DMs.
+Telegram userbot works via mcporter.
 
 Config: `/home/node/.openclaw/workspace/config/mcporter.json`
 

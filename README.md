@@ -22,7 +22,7 @@ Docker-инфраструктура для запуска [OpenClaw](https://ope
 ### 1. Создать агента
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/dcomrad/openclaw-infra openclaw-telegram
 cd openclaw-telegram
 make create
 ```
@@ -57,6 +57,7 @@ make restart AGENT=alice PORT=18789     # Перезапустить с юзер
 
 - `infra/telegram-mcp/tools-snippet.md` — дописывается в TOOLS.md агента
 - `infra/telegram-mcp/heartbeat-snippet.md` — дописывается в HEARTBEAT.md агента (поведение при периодическом сканировании чатов)
+
 ## Команды
 
 ```bash
@@ -70,9 +71,3 @@ make build                              # Пересобрать Docker-обра
 make generate-session                   # Сгенерировать Telegram session string
 make add-userbot AGENT=<имя>            # Подключить юзербот к агенту
 ```
-
-## Credits
-
-- [OpenClaw](https://openclaw.ai) — AI agent gateway
-- [telegram-mcp](https://github.com/chigwell/telegram-mcp) by chigwell — Telegram MCP server
-- [mcporter](https://www.npmjs.com/package/mcporter) — MCP server bridge

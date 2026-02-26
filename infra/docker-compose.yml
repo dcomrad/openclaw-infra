@@ -1,0 +1,10 @@
+services:
+  agent:
+    image: ${IMAGE}
+    container_name: openclaw-${AGENT_NAME}
+    volumes:
+      - ../${AGENT_NAME}:/home/node/.openclaw
+    ports:
+      - "127.0.0.1:${PORT}:18789"
+    init: true
+    restart: unless-stopped

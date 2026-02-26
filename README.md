@@ -45,15 +45,15 @@ make start AGENT=bob PORT=18790
 
 ### 3. Подключить юзербот (опционально)
 
-Если хотите, чтобы агент сам действовал в Telegram-группах:
+Если хотите, чтобы агент  действовал, как Telegram-пользователь:
 
 ```bash
 make generate-session                   # Сгенерировать session string для Telegram-аккаунта
 make add-userbot AGENT=alice            # Подключить юзербот к агенту
-make restart AGENT=alice PORT=18789     # Перезапустить с юзерботом
+make restart AGENT=alice [PORT=18789]     # Перезапустить с юзерботом
 ```
 
-`add-userbot` копирует в workspace агента сниппеты из `infra/telegram-mcp/` — инструкции для работы с Telegram (TOOLS.md, HEARTBEAT.md, SKILL.md). По умолчанию юзербот работает только с группами. Перед подключением отредактируйте сниппеты под себя:
+`add-userbot` копирует в workspace агента сниппеты из `infra/telegram-mcp/` — инструкции для работы с Telegram. По умолчанию юзербот работает только с группами. Перед подключением отредактируйте сниппеты под себя:
 
 - `infra/telegram-mcp/tools-snippet.md` — дописывается в TOOLS.md агента
 - `infra/telegram-mcp/heartbeat-snippet.md` — дописывается в HEARTBEAT.md агента (поведение при периодическом сканировании чатов)

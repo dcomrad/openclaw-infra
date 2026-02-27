@@ -16,6 +16,12 @@ Docker-инфраструктура для запуска [OpenClaw](https://ope
 - Python 3
 - Telegram API credentials ([my.telegram.org](https://my.telegram.org))
 
+Минимальная конфигурация сервера:
+Всё сильно зависит от сценариев и активности использования, но если взять какое-то усреднённое использование, то:
+- 1 контейнер:    CPU: 2 Cores, RAM: 2 GB
+- 2 контейнера:   CPU: 3 Cores, RAM: 4 GB
+- 3 контейнера:   CPU: 4 Cores, RAM: 6 GB
+
 
 ## Быстрый старт
 
